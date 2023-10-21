@@ -11,7 +11,7 @@ class BasePage:  # Здесь находятся методы для всех с
 
         self.metaView = WebElement(driver, 'head > meta')
         self.name = WebElement(driver, 'viewport')
-        self.content = WebElement(driver, 'width,initial-scale=1')
+        self.content = WebElement(driver, 'width=device-width,initial-scale=1')
 
     def visit(self):
         return self.driver.get(self.base_url)
