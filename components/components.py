@@ -5,6 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
+
 class WebElement:
     def __init__(self, driver, locator='', locator_type='css'):
         self.driver = driver
@@ -61,15 +62,15 @@ class WebElement:
     def get_by_type(self):  # Метод для работы с любым типом локатора
         if self.locator_type == "id":
             return By.ID
-        elif self.locator_type =="name":
+        elif self.locator_type == "name":
             return By.NAME
-        elif self.locator_type =="xpath":
+        elif self.locator_type == "xpath":
             return By.XPATH
-        elif self.locator_type =="css":
+        elif self.locator_type == "css":
             return By.CSS_SELECTOR
-        elif self.locator_type =="class":
+        elif self.locator_type == "class":
             return By.CLASS_NAME
-        elif self.locator_type =="link":
+        elif self.locator_type == "link":
             return By.LINK_TEXT
         else:
             print("Locator type " + self.locator_type + " not correct")
