@@ -10,8 +10,7 @@ class BasePage:  # Здесь находятся методы для всех с
         self.base_url = base_url  # 'https://demoqa.com/'
 
         self.metaView = WebElement(driver, 'head > meta')
-        self.name = WebElement(driver, 'viewport')
-        self.content = WebElement(driver, 'width=device-width,initial-scale=1')
+
 
     def visit(self):
         return self.driver.get(self.base_url)

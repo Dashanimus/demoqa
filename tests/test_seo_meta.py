@@ -13,5 +13,3 @@ def test_check_title_all_pages(browser, pages):
     page.visit()
     time.sleep(2)
     assert page.metaView.exist()
-    # assert page.metaView.get_dom_attribute('name') == 'viewport'
-    # assert page.metaView.get_dom_attribute('content') == 'width=device-width,initial-scale=1'
