@@ -19,4 +19,4 @@ def test_skip():
 
 @allure.feature('проверка статусов тестов')
 def test_broken():
-    raise Exception('oops')  # Raise для создания искусственной ошибки
+    raise Exception('Oops...')  # Raise для создания искусственной ошибки
