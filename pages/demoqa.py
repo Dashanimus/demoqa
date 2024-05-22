@@ -8,7 +8,7 @@ class DemoQA(BasePage):
         super().__init__(driver, self.base_url)
 
         self.icon = WebElement(driver, '#app > header > a')
-        self.btn_elements = WebElement(driver, '#app > div > div > div.home-body > div > div:nth-child(1)')
+        self.btn_elements = WebElement(driver, '#app > div > div > div.home-body > div > div:nth-child(1) > div > div.card-body')
         self.start_url = 'https://demoqa.com/'
         self.tools_qa = WebElement(driver, '#app > footer > span')
         self.center = WebElement(driver, '//*[@id="app"]/div/div/div[2]/div[2]/text()')

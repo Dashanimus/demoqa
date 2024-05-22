@@ -8,7 +8,7 @@ class ElementsPage(BasePage):
         super().__init__(driver, self.base_url)
 
         # объекты элементов
-        self.text_elements = WebElement(driver, 'div.playgound-header > div')
+        self.text_elements = WebElement(driver, '#app > div > div > div > div:nth-child(1) > div > div > div:nth-child(1) > span > div > div.header-text')
         self.icon = WebElement(driver, 'header > a > img')
         self.btn_sidebar_first = WebElement(driver, 'div:nth-child(1) > span > div')
         self.btn_sidebar_first_textbox = WebElement(driver, 'div:nth-child(1) > div > ul > #item-0 > span')
