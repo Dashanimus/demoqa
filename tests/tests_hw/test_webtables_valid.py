@@ -17,6 +17,7 @@ def test_webtables_valid(browser):
     tables.fill_form()
     time.sleep(2)
     tables.submit.click()
+    time.sleep(2)
     assert not tables.modal_dialog.exist()
     time.sleep(2)
 
